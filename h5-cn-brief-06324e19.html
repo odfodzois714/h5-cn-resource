@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界杯 · 杂志专题</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #f7f6f3;
+            color: #1e1e1e;
+            font-family: 'Georgia', 'Times New Roman', '宋体', 'Songti SC', serif;
+            line-height: 1.7;
+            letter-spacing: 0.01em;
+            padding: 0 1.2rem;
+        }
+        .page {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3.2rem 0 4rem 0;
+        }
+        /* hero */
+        .hero {
+            margin-bottom: 3.8rem;
+            border-bottom: 1px solid #d9d4cd;
+            padding-bottom: 2.4rem;
+        }
+        .hero sup {
+            font-size: 0.7rem;
+            color: #8e897f;
+            letter-spacing: 0.3em;
+            display: block;
+            margin-bottom: 0.6rem;
+            font-style: normal;
+            text-transform: uppercase;
+        }
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            line-height: 1.15;
+            color: #1f2a1f;
+            margin-bottom: 0.25rem;
+        }
+        .hero .sub {
+            font-size: 1.05rem;
+            color: #716c63;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+        /* 背景说明 */
+        .backdrop {
+            background: #ece9e3;
+            padding: 2rem 2rem 2.4rem 2rem;
+            margin-bottom: 3.2rem;
+            border-radius: 0;
+            border-left: 3px solid #b3aa9b;
+            font-size: 0.98rem;
+            color: #2c2c2a;
+        }
+        .backdrop p {
+            margin-bottom: 0.9rem;
+        }
+        .backdrop p:last-of-type {
+            margin-bottom: 0;
+        }
+        /* 正文介绍 */
+        .intro-section {
+            margin-bottom: 3.6rem;
+        }
+        .intro-section h2 {
+            font-size: 1.7rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #263326;
+            border-bottom: 1px solid #d1ccc3;
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.2rem;
+        }
+        .intro-section p {
+            margin-bottom: 1.2rem;
+            text-align: left;
+            word-break: break-word;
+        }
+        .intro-section p:last-child {
+            margin-bottom: 0;
+        }
+        .intro-section .inset-link {
+            display: inline;
+            color: #3b5e3b;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #b6c5b6;
+            transition: color 0.15s;
+        }
+        .intro-section .inset-link:hover {
+            color: #1b3a1b;
+            text-decoration-color: #1b3a1b;
+        }
+        .pull-quote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #4d4a42;
+            padding: 1.2rem 0 0.6rem 1.8rem;
+            margin: 1.4rem 0 1.6rem 0;
+            border-left: 2px solid #a49b8c;
+        }
+        /* faq 摘要 */
+        .faq-digest {
+            background: #f2f0ea;
+            padding: 1.8rem 1.8rem 1.8rem 2rem;
+            margin-bottom: 3rem;
+            border-radius: 0;
+        }
+        .faq-digest h3 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            color: #2f3f2f;
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
+        }
+        .faq-digest dt {
+            font-weight: 600;
+            color: #373d32;
+            margin-top: 0.8rem;
+            margin-bottom: 0.2rem;
+            font-size: 0.95rem;
+        }
+        .faq-digest dd {
+            color: #4d4b44;
+            margin-left: 0.2rem;
+            font-size: 0.92rem;
+            margin-bottom: 0.6rem;
+        }
+        /* 页尾 */
+        .footer-note {
+            margin-top: 2.2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #dad5cd;
+            text-align: center;
+            font-size: 0.88rem;
+            color: #6b655b;
+        }
+        .footer-note a {
+            color: #3f5a3f;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .footer-note a:hover {
+            color: #1d2f1d;
+        }
+        .footer-note .meta {
+            margin-top: 0.8rem;
+            font-size: 0.75rem;
+            color: #908b80;
+            letter-spacing: 0.1em;
+        }
+        /* 响应式 */
+        @media (max-width: 540px) {
+            .page { padding: 2rem 0 2.8rem 0; }
+            .hero h1 { font-size: 2.4rem; }
+            .hero .sub { font-size: 0.95rem; }
+            .backdrop { padding: 1.4rem; }
+            .intro-section h2 { font-size: 1.4rem; }
+            .pull-quote { font-size: 1rem; padding-left: 1rem; }
+            .faq-digest { padding: 1.2rem; }
+        }
+        @media (max-width: 380px) {
+            body { padding: 0 0.8rem; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- hero 横幅 -->
+    <header class="hero">
+        <sup>· 杂志专题 ·</sup>
+        <h1>世界杯</h1>
+        <div class="sub">一种流动的叙述，关于角逐、记忆与共同的视野</div>
+    </header>
+
+    <!-- 背景说明 -->
+    <div class="backdrop">
+        <p>每四年，当绿茵场上的哨声穿过时区与语言，数以亿计的目光便聚向同一片草叶。自1930年首届赛事在乌拉圭拉开帷幕，世界杯早已不只关乎胜负——它像一面流动的镜子，映出不同年代的激情、技术、甚至社会情绪的纹理。</p>
+        <p>从黑白影像到超高清转播，从十二英寸屏幕到掌中即时推送，媒介在变，但那种由竞技本身传递的紧张与松弛、失落与狂喜，始终在人们的集体记忆中留下刻痕。今天，我们尝试从叙事的边缘重新端详这场盛宴。</p>
+    </div>
+
+    <!-- 三段自然介绍 -->
+    <section class="intro-section">
+        <h2>节奏·对抗中的呼吸</h2>
+        <p>有人将足球比作没有剧本的戏剧——二十二人，一个球，九十分钟里，每一次传递都可能是转折。世界杯的赛场上，这种不可预测性被放大到极致：弱旅与豪强的边界时常模糊，一次反击足以颠覆所有赛前预测。你很少在其他体育赛事中见到如此密集的戏剧性：补时绝杀、点球大战、红牌离场、更衣室里的沉默或怒吼。</p>
+        <p>而这一切都发生在高度结构化的战术框架里。阵型的推移、高位逼抢、防守落位——现代足球像一门精密的社会学，每个人都在自己的轨道上奔跑，同时感知着整支队伍的呼吸。世界杯正是这门学问最公开的实验室。</p>
+        <div class="pull-quote">「足球是简单的游戏，但最简单的传球往往最难。」—— 这句话在每届世界杯上都会被人重新想起。</div>
+        <p>从小组赛到淘汰赛，节奏本身就在变化：小组赛的试探、十六强后的谨慎、半决赛的张力、决赛中的每一秒都仿佛被拉长。这种节奏的起伏，正是世界杯叙事中无法复制的部分。</p>
+    </section>
+
+    <section class="intro-section">
+        <h2>连接·超越竞技的共鸣</h2>
+        <p>世界杯最独特的属性或许在于：它同时承载着地方认同与全球共鸣。你会在街头看到不同国籍的球迷并肩而行，也会在社交媒体上见证一个进球如何让相隔万里的人在同一瞬间欢呼。这种连接不是抽象的——它具体到球衣颜色、助威歌曲、甚至赛后握手的微表情。</p>
+        <p>对很多人而言，世界杯也是私人记忆的坐标。某届赛事可能关联着毕业那年、某次聚会、或者与父辈一起熬夜的夜晚。赛事像一把刻度尺，丈量着时间的流逝与生活的变化。当熟悉的面孔逐渐退役，新星在同一个球场崛起，你会意识到足球本身便是流动的编年史。</p>
+        <p>在中文语境里，<a href="https://h5-cn-shijiebei.com" class="inset-link">世界杯</a>这三个字本身已经成为一个文化符号——它既指代赛事，也指代围绕它所形成的讨论、期待与共同经验。无论你是否狂热地追随某支球队，世界杯期间，你总是会不自觉地被卷入某种话题的漩涡。这就是它的力量：不要求你热爱，却让你在场。</p>
+    </section>
+
+    <section class="intro-section">
+        <h2>回望·赛事的另一种注脚</h2>
+        <p>每届世界杯都会留下一些超越比分的画面：1994年的巴乔、2002年的意外与泪水、2014年的格策绝杀、2022年梅西捧杯时几乎凝固的空气……这些画面之所以动人，不止因为技术或战术，更因为它们承载了人类情感的某一截面：等待、释放、遗憾与和解。</p>
+        <p>世界杯同样也是关于「场外」的叙事。主办城市的筹备、球迷区的搭建、志愿者胸前的徽章交换、甚至因时差而调整的作息——所有这些都构成了赛事不可分割的部分。它并非只属于球场内的90分钟，而是属于每个投入其中的人所延展出的时间。</p>
+        <p>也许正因如此，世界杯才始终具有一种「重读」的价值。它不会因为一届结束而彻底封存，而是沉淀为一种可以反复回味的文本。随着时间推移，某些原本被忽略的细节会逐渐浮现，成为新的理解入口。我们在每一届中寻找相似又不同的东西——这就是世界杯的长久引力。</p>
+    </section>
+
+    <!-- FAQ 摘要  -->
+    <div class="faq-digest">
+        <h3>· 简问简答 ·</h3>
+        <dl>
+            <dt>为什么世界杯四年一届？</dt>
+            <dd>早期由国际足联与各大洲赛事协调后确立的周期，既保持赛事稀缺性，又为预选赛留下充足时间。这一节奏也使得每一届都带有“世代交替”的意味。</dd>
+            <dt>世界杯与奥运会足球赛有何不同？</dt>
+            <dd>世界杯是国际足联独立主办的顶级赛事，参赛队为各自大洲预选赛出线的国家代表队；奥运男足则受年龄限制（通常U23+少数超龄球员），关注度与竞技层级差异明显。</dd>
+            <dt>为什么世界杯常被称为“足球世界的中心”？</dt>
+            <dd>因为它是全球参与度最高、转播覆盖最广、商业价值与情感投射最密集的单项体育赛事，没有之一。</dd>
+        </dl>
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <footer class="footer-note">
+        <p>本篇专题仅为世界杯叙事的微小切片。若想了解更多赛事信息、赛程回顾或深度数据，可移步 <a href="https://h5-cn-shijiebei.com">世界杯</a> 专题页面，那里有更完整的记述。</p>
+        <div class="meta">杂志式叙事 · 2025 · 非官方视角</div>
+    </footer>
+</div>
+</body>
+</html>
